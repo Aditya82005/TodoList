@@ -15,7 +15,7 @@ function App() {
     <>
     <Navbar title="To Dos"/>
     <Addtodo todos={todos} settodos={settodos}/>
-    <Todos todos={todos}/>
+    <Todos todos={todos} settodos={settodos}/>
     </>
   );
 }
