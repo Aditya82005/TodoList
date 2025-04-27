@@ -27,7 +27,7 @@ function Addtodo({todos,settodos}) {
                     <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" onChange={(e) => settitle(e.target.value)}/>
                 </div>
                 <div className="mb-3">
-                    <label for="exampleInputPassword1" className="form-label">Description</label>
+                    <label  className="form-label">Description</label>
                     <input type="text" value={desc} className="form-control" onChange={(e) => setdesc(e.target.value)} id="exampleInputPassword1" />
                 </div>
 
