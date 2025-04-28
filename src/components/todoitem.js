@@ -1,5 +1,15 @@
 import React from "react";
 function Todoitem(props) {
+    
+    //delete function
+    const ondelete=()=>{
+        props.settodos(props.todos.filter(present))
+    }
+    function present(todo){
+        if(todo.title!==props.title){
+            return todo
+        }
+    }
     return (
         <div className="container">
 
@@ -12,7 +22,7 @@ function Todoitem(props) {
                         <div id="emailHelp" className="form-text">{props.desc}</div>
                     </div>
                     <div className="col-md-12 col text-end mb-2">
-                        <button type="button" className="btn btn-danger">Delete</button>
+                        <button type="button"  onClick={ondelete} className="btn btn-danger">Delete</button>
                     </div>
                 </div>
                 <hr />

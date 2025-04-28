@@ -8,7 +8,7 @@ function Todos(props) {
             <div className="m-3">
                 {
                     props.todos.map(todo => (
-                       <Todoitem title={todo.title} desc={todo.desc} settodos={props.settodos}/>
+                       <Todoitem title={todo.title} desc={todo.desc} todos={props.todos} settodos={props.settodos}/>
                     ))
                 }
             </div>
